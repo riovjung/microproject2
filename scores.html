@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">	
+	<!-- Rio Jung
+		ISLT_7356
+		Week 2 Micro-project
+		August 29, 2019 
+	-->
+	
+	
+    <title>Average Test Scores</title>
+    <script>
+		
+        var entry;
+        var average;
+        var total = 0;
+		
+        //get 4 scores from user, added score4 entry, task 3
+		entry = prompt("Enter test score");
+        var score1 = parseInt(entry);
+		
+		
+		entry = prompt("Enter test score");
+        var score2 = parseInt(entry);
+		
+		
+		entry = prompt("Enter test score");
+        var score3 = parseInt(entry);
+		
+		
+		entry = prompt("Enter test score");
+        var score4 = parseInt(entry);
+		
+
+        //calculate the average, change total to 4, 
+		total = score1 + score2 + score3 + score4;
+        average = parseInt(total/4);
+		
+		
+    </script>
+</head>
+<body>
+    <script>
+		//alert dialogue box, copied from document.write, task 4, searched stack overflow for line break
+		alert("Score 1 = " + score1 + "\n" +
+		    "Score 2 = " + score2 + "\n" +
+			"Score 3 = " + score3 + "\n" +
+		    "Score 4 = " + score4 + "\n\n" +
+			"Average score = " + average);
+		
+		//added score 4 to document write, task 3
+		document.write("<h1>The Test Scores App</h1>");
+		document.write("Score 1 = " + score1 + "<br>" +
+		    "Score 2 = " + score2 + "<br>" +
+			"Score 3 = " + score3 + "<br>" +
+		    "Score 4 = " + score4 + "<br><br>" +
+			"Average score = " + average + "<br><br>");
+		
+	
+    </script>
+    Thanks for using the Test Scores application!
+</body>
+</html>
